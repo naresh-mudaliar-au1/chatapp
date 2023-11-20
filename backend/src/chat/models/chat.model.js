@@ -1,8 +1,7 @@
 import { model, Schema } from "mongoose";
-import { messageModel } from "./chat.message.model";
+import MessageModel from "./chat.message.model";
 
 const chatModel = new Schema({
-  _id: { type: Schema.Types.ObjectId },
   user_one: {
     type: Schema.Types.ObjectId,
     ref: "user",
@@ -14,7 +13,7 @@ const chatModel = new Schema({
     required: true,
   },
   room_id: { type: String },
-  messages: [messageModel],
+  messages: [MessageModel],
   created_at: {
     type: Date,
   },
