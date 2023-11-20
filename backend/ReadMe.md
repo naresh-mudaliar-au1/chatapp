@@ -5,10 +5,6 @@
 2) copy env-example and create .env file
 3) npm run start:dev
 
-1. **Created Book Management API**
-2. **User Auth based Book Create and Update API for limiting usage**
-3. **List of API's With Payload**
-
 _=> versioning: /api/v1/_
 
 **User Routes**
