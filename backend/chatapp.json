@@ -1,0 +1,239 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2023-11-20T18:59:39.494Z",
+  "__export_source": "insomnia.desktop.app:v2023.5.8",
+  "resources": [
+    {
+      "_id": "req_aa0b01b3764544c38c6d92fbde14879e",
+      "parentId": "fld_5c2683501937467d8920afb3ef61cdad",
+      "modified": 1700375646113,
+      "created": 1700375309475,
+      "url": "http://localhost:8080/api/v1/user",
+      "name": "Get all users",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [
+        {
+          "id": "pair_2a41efd3c78c468891d3c25cdea4e5fc",
+          "name": "search",
+          "value": "aaaa",
+          "description": "",
+          "disabled": true
+        }
+      ],
+      "headers": [{ "name": "User-Agent", "value": "insomnia/2023.5.8" }],
+      "authentication": {},
+      "metaSortKey": -1700375309475,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_5c2683501937467d8920afb3ef61cdad",
+      "parentId": "fld_86f0d63814d34ec48dee35c64978eb18",
+      "modified": 1700506694199,
+      "created": 1700331415718,
+      "name": "UserModule",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1700506692254,
+      "_type": "request_group"
+    },
+    {
+      "_id": "fld_86f0d63814d34ec48dee35c64978eb18",
+      "parentId": "wrk_aa6f2700e31f47359802b2db43b81eea",
+      "modified": 1700506683023,
+      "created": 1700506683023,
+      "name": "Chatapp",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1700506683023,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_aa6f2700e31f47359802b2db43b81eea",
+      "parentId": null,
+      "modified": 1700310868085,
+      "created": 1700310868085,
+      "name": "ChatApi",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_975a8ea6c7624842a2d622e2451354fc",
+      "parentId": "fld_5c2683501937467d8920afb3ef61cdad",
+      "modified": 1700416874558,
+      "created": 1700310874240,
+      "url": "http://localhost:8080/api/v1/user/signup",
+      "name": "Register User",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"username\":\"naresh\",\n\t\"email\":\"mudaliar.naresh@gmail.com\",\n\t\"password\":\"12345678\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "User-Agent", "value": "insomnia/2023.5.8" }
+      ],
+      "authentication": {},
+      "metaSortKey": -1700331423441,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_ee697fad91c14c1ab644b16dc71a3c7f",
+      "parentId": "fld_5c2683501937467d8920afb3ef61cdad",
+      "modified": 1700416974553,
+      "created": 1700329734215,
+      "url": "http://localhost:8080/api/v1/user/login",
+      "name": "Login",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\":\"mudaliar.naresh@gmail.com\",\n\t\"password\":\"12345678\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "User-Agent", "value": "insomnia/2023.5.8" }
+      ],
+      "authentication": {},
+      "metaSortKey": -1700331423341,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_2e2334ce3822460f8516c9d398ee62fd",
+      "parentId": "fld_eee5e4c3440b4265aec2d601b0a3f731",
+      "modified": 1700506217039,
+      "created": 1700506080759,
+      "url": "http://localhost:8080/api/v1/chat",
+      "name": "Get chat",
+      "description": "",
+      "method": "GET",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"id\": \"6559a4406e6d7516d7298769\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "User-Agent", "value": "insomnia/2023.5.8" }
+      ],
+      "authentication": {},
+      "metaSortKey": -1700506080759,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_eee5e4c3440b4265aec2d601b0a3f731",
+      "parentId": "fld_86f0d63814d34ec48dee35c64978eb18",
+      "modified": 1700506692176,
+      "created": 1700337999303,
+      "name": "Chat ",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1700506692154,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_a99f9cbdafd544bca830e0bd4a0e06f1",
+      "parentId": "fld_eee5e4c3440b4265aec2d601b0a3f731",
+      "modified": 1700506479118,
+      "created": 1700338002230,
+      "url": "http://localhost:8080/api/v1/chat/event",
+      "name": "Message_event",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"sender\":\"655a3ea9778864f860f00611\",\n\t\"receiver\":\"6559a4406e6d7516d7298769\",\n\t\"content\":\"Message change1!\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/2023.5.8",
+          "id": "pair_3b6d7b61589147ec97588ed7e8edd21f"
+        },
+        {
+          "id": "pair_4ffa604a58b847cbb27d909abd2cff53",
+          "name": "authorization",
+          "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5hcmVzaCIsImlhdCI6MTcwMDMzMjQzMX0.sObjmzj8QLhClHj1Ye3rpEF56BDnHAtWqxxdFtovwS4",
+          "description": ""
+        },
+        {
+          "id": "pair_236fc13fbc8343e2af6d282994305325",
+          "name": "",
+          "value": "",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1700338002230,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_60db6d01ff38063f3d4463802f5e938adc49db89",
+      "parentId": "wrk_aa6f2700e31f47359802b2db43b81eea",
+      "modified": 1700310868090,
+      "created": 1700310868090,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1700310868090,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_60db6d01ff38063f3d4463802f5e938adc49db89",
+      "parentId": "wrk_aa6f2700e31f47359802b2db43b81eea",
+      "modified": 1700310868092,
+      "created": 1700310868092,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    }
+  ]
+}
