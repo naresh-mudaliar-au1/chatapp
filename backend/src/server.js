@@ -6,6 +6,7 @@ import cors from "cors";
 
 import "./config/db";
 import { userRoute } from "./user";
+import {chatRoute} from "./chat"
 import { configureSocket } from "./common/socket";
 
 const app = express();
@@ -31,7 +32,7 @@ app.use((req, res, next) => {
 
 app.use(cors());
 app.use("/api/v1/user", userRoute);
-// app.use("/api/v1/chat", chatRoute);
+app.use("/api/v1/chat", chatRoute);
 
 httpServer.listen(PORT, () => {
   console.log(`Server Running at http://${HOST}:${PORT}/`);

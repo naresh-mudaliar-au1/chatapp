@@ -1,7 +1,7 @@
-import { model, Schema } from "mongoose";
+import { Schema } from "mongoose";
 
 const messageModel = new Schema({
-  _id: { type: Schema.Types.ObjectId },
+  id: { type: Schema.Types.ObjectId },
   sender: {
     type: Schema.Types.ObjectId,
     ref: "user",
@@ -19,6 +19,4 @@ const messageModel = new Schema({
   },
 });
 
-const messages = new model("Message", messageModel);
-
-export default messages;
+export default messageModel;
